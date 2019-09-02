@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ssj_recognized.lostandfound.SearchObject">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/titletext"
+                android:text="Lost and Found"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/user"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10sp"
+                android:id="@+id/user"/>
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:scaleType="fitXY"
+                android:id="@+id/search"
+                android:src="@drawable/search"
+                android:layout_marginLeft="55sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notification"
+                android:scaleType="fitXY"
+                android:id="@+id/notification"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55sp"/>
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:id="@+id/camera"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/camera1"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/toolbar2"
+        android:layout_below="@id/toolbar">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/titlepost"
+            android:text="Search"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Name"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:id="@+id/name"
+        android:layout_marginTop="40sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Location"
+        android:layout_marginLeft="20sp"
+        android:layout_below="@+id/name"
+        android:layout_marginRight="20sp"
+        android:id="@+id/location"
+        android:layout_marginTop="10sp"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Search"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/location"
+        android:background="@drawable/roundbutton"
+        android:id="@+id/searchbtn"/>
+
+
+</RelativeLayout>

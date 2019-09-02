@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ssj_recognized.lostandfound.Notifications">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/titletext"
+                android:text="Lost and Found"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/user"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10sp"
+                android:id="@+id/user"/>
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:scaleType="fitXY"
+                android:id="@+id/search"
+                android:src="@drawable/search"
+                android:layout_marginLeft="55sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notificationselected"
+                android:scaleType="fitXY"
+                android:id="@+id/notification"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55sp"/>
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:id="@+id/camera"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/camera1"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/notifications"
+        android:layout_marginTop="50sp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
